@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>LOL - login</title>
+</head>
+<body>
+
+    <img id="capa" src="assets/images/Mordekaiser.jpg" alt="imagem fundo">
+
+
+        <div id="background">
+            <div id="main">
+
+                <div id="login">
+
+                    <div id="login_header">
+                        <img src="assets/images/lol_black.png" alt="lol" id="login_header_logo" onclick="darkMode()" class="img">
+                        <div id="login_header_country">
+                            <select name="pais" id="country" onchange="traducao()" class="dm_white">
+                                <option value="en" selected>en</option>
+                                <option value="pt">pt</option>
+                                <option value="es">es</option>
+                            </select>
+                            <img src="assets/images/comunication_black.png" alt="foto" class="img">
+                        </div>
+                    </div>
+
+                    <div id="login_form">
+                        <form action="get">
+                            <h1 id="title" class="dm_white">SIGN IN</h1>
+                            <input type="text" placeholder="Username" id="username"
+                            class="placeholder dm_white">
+                            <input type="password" placeholder="Password" id="password"
+                            class="placeholder dm_white">
+                            <div class="checkbox">
+                                <input type="checkbox" name="visibe" id="visible" onchange="visiblePassword()">
+                                <label for="visible" id="visible_text"
+                                class="checkbox_label dm_white">show password</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="signed" id="signed"
+                                >
+                                <label for="signed" id="signed_text"
+                                class="checkbox_label dm_white">stay signed</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="login_options">
+                        <div>
+                            <a href="index.html" class="option dm_white">Create Account</a><br>
+                            <a href="index.html" class="option dm_white">Can't sign in</a>
+                        </div>
+                        <a href="index.html">
+                            <img src="assets/images/seta_black.png" alt="entrar" class="img">
+                        </a>
+                    </div>
+
+                </div>
+                <img src="assets/images/Mordekaiser.jpg" alt="mordkaiser" id="foto_principal" >
+
+            </div>
+        </div>
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
